@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1e3a8a;
+  color: #333333;
+  position: relative;
+}
+#resume-container {
+  width: 800px;
+  background: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+#img-about {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 30px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  position: relative;
+  padding-left: 20px;
+}
+
+img {
+  width: 200px;
+  height: 220px;
+  border: 2px solid black;
+  border-radius: 50%;
+}
+#about-text {
+  position: absolute;
+  color: #333333;
+  top: 50px;
+  left: 240px;
+  font-size: 18px;
+  text-align: justify;
+  right: 20px;
+  line-height: 1.4;
+}
+#about-text h2 {
+  margin-bottom: 10px;
+  border-bottom: 2px solid;
+  font-weight: 500;
+}
+#name-heading {
+  color: #1e3a8a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#name-heading h3 {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 50px;
+}
+#name-heading h4 {
+  font-size: 28px;
+  font-weight: 400;
+  text-transform: uppercase;
+  border: #1e3a8a 2px solid;
+  width: 300px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.box {
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 24px;
+  display: flex;
+  flex-direction: column;
+}
+.box button {
+  font-size: 39px;
+  border-radius: 50px;
+  background: #1e3a8a;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  z-index: 1;
+}
+.box button:hover {
+  background: #6a8be6;
+  color: white;
+}
+
+.box p {
+  padding: 4px;
+  font-size: 18px;
+  text-align: justify;
+  border-bottom: 2px solid #1e3a8a;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  font-size: 24px;
+}
+.box li {
+  border-bottom: 2px solid #1e3a8a;
+  list-style-type: dis;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.box ul {
+  padding-left: 10px;
+  list-style-type: disc;
+}
+.box a {
+  font-size: 20px;
+  padding: 5px;
+  border-bottom: 2px solid #1e3a8a;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.box i {
+  margin-right: 10px;
+  font-size: 30px;
+  padding: 4px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  background: #1e3a8a;
+  color: white;
+}
+button {
+  background: white;
+}
+
+#pinfo {
+  display: none;
+}
+
+#exp {
+  display: none;
+}
+
+#edu {
+  display: none;
+}
+#skillsSec {
+  display: none;
+}
+
+#sociallinks {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  #resume-container {
+    width: 100%;
+    padding: 10px;
+  }
+  #img-about {
+    height: 400px;
+    padding: 10px;
+    text-align: center;
+  }
+  #about-text {
+    font-size: 16px;
+    line-height: 1;
+    top: 240px;
+    left: 8px;
+  }
+  #name-heading h4 {
+    width: 100%;
+    text-align: center;
+  }
+  #name-heading h3 {
+    font-size: 30px;
+  }
+  #name-heading h2 {
+    font-size: 20px;
+  }
+  #img {
+    margin-top: 20px;
+  }
+  .box p,
+  li,
+  a {
+    font-size: 20px;
+  }
+
+  #sociallinks a {
+    font-size: 18px;
+    width: 300px;
+    overflow: hidden;
+  }
+}
