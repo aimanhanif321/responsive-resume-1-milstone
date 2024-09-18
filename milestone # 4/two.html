@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editable Resume with pDF download
+    </title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="resume-container">
+        <h1 id="h1">Fill This Form</h1>
+
+    <div id="form-con">
+        <form id="formm">
+            <fieldset>
+                <legend>Persnal information</legend>
+                 <label for="username">Username</label>
+                 <input type="text" id="username">
+                <label for="name">Name:</label> 
+                <input type="text" name="" id="name"><br>
+                <label for="email">Email:</label>
+                <input type="email" name="" id="email" required><br>
+                <label for="phone">Phone:</label>
+                <input type="number" name="" id="phone" required>
+                
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Education</legend>
+                <label for="education">Education:</label>
+                <textarea id="edu" rows="3" required></textarea>
+
+            </fieldset>
+            <fieldset>
+                <legend>Experiance</legend>
+                <label for="expiriance">Experiance:</label>
+                <textarea id="exp" rows="3" required></textarea>
+
+            </fieldset>
+            <fieldset>
+                <legend>skills</legend>
+                <label for="education">Skills:</label>
+                <textarea rows="3" id="skillinput" required></textarea>
+            </fieldset>
+            <button type="submit">GENERATE</button>
+    </div>
+
+    </form>
+<!-- 
+        <div id="resume-display" contenteditable="true">
+            <div id="generated-link-con" style="display: none;">
+                <a id="generated-link" href="#" target="_blank" ></a>
+                <button type="" id="link-btn">Download</button>
+            </div> -->
+            <div id="resume-display" contenteditable="true">
+                <div id="generated-link-con" style="display: none; text-align: center; margin-top: 20px;">
+                    <a id="generated-link" href="#" target="_blank" style="font-size: 16px; color: #0000EE; text-decoration: underline; margin-right: 10px;">Download Resume</a>
+                    <button type="button" id="link-btn" style="padding: 10px 20px; font-size: 14px; background-color: #007BFF; color: white; border: none; border-radius: 5px; cursor: pointer;">Download</button>
+                </div>
+            </div>
+            
+            
+
+    
+</div>
+<script src="index.js"></script>
+</body>
+</html>
